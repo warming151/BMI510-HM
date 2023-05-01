@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{f1}
 \alias{f1}
-\title{f1}
+\title{f1
+Calculate f1 based on comparing predicted and training labels}
 \usage{
 f1(pred, truth)
 }
 \arguments{
 \item{truth}{}
 }
+\value{
+f1
+}
 \description{
 f1
+Calculate f1 based on comparing predicted and training labels
 }

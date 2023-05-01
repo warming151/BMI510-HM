@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{log_likelihood_norm}
 \alias{log_likelihood_norm}
-\title{log_likelihood_norm}
+\title{log_likelihood_norm
+calculate the log-likelihood of a sample x under the normal distribution}
 \usage{
 log_likelihood_norm(x, mean, sd)
 }
 \arguments{
 \item{mean, sd}{}
 }
+\value{
+the log-likelihood of a sample x under the normal distribution
+}
 \description{
 log_likelihood_norm
+calculate the log-likelihood of a sample x under the normal distribution
 }

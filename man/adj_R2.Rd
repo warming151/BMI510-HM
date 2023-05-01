@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{adj_R2}
 \alias{adj_R2}
-\title{is_max}
+\title{adj_R2
+Calculate the adjusted r-squared statistic between predicted and ground truth continuous variables}
 \usage{
 adj_R2(pred, truth, n_p)
 }
 \arguments{
-\item{na.rm}{}
+\item{truth, }{n_p}
+}
+\value{
+the adjusted r-squared statistic between predicted and ground truth continuous variables
 }
 \description{
-is_max
+adj_R2
+Calculate the adjusted r-squared statistic between predicted and ground truth continuous variables
 }

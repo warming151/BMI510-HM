@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{r2}
 \alias{r2}
-\title{r2}
+\title{r2
+Calculate the r-squared statistic between predicted and ground truth continuous variables}
 \usage{
 r2(pred, truth)
 }
 \arguments{
 \item{truth}{}
 }
+\value{
+r-squared statistic between predicted and ground truth continuous variables
+}
 \description{
 r2
+Calculate the r-squared statistic between predicted and ground truth continuous variables
 }

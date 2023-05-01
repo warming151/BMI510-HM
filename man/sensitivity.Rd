@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{sensitivity}
 \alias{sensitivity}
-\title{sensitivity}
+\title{sensitivity
+Calculate sensitivity based on comparing predicted and training labels}
 \usage{
 sensitivity(pred, truth)
 }
 \arguments{
 \item{truth}{}
 }
+\value{
+sensitivity
+}
 \description{
 sensitivity
+Calculate sensitivity based on comparing predicted and training labels
 }

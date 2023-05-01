@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{log_likelihood_unif}
 \alias{log_likelihood_unif}
-\title{log_likelihood_unif}
+\title{log_likelihood_unif
+calculate the log-likelihood of a sample x under the uniform distribution}
 \usage{
 log_likelihood_unif(x, min, max)
 }
 \arguments{
 \item{min, max}{}
 }
+\value{
+the log-likelihood of a sample x under the uniform distribution
+}
 \description{
 log_likelihood_unif
+calculate the log-likelihood of a sample x under the uniform distribution
 }

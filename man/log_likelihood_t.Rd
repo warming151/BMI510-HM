@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{log_likelihood_t}
 \alias{log_likelihood_t}
-\title{log_likelihood_t}
+\title{log_likelihood_t
+calculate the log-likelihood of a sample x under the t densities}
 \usage{
 log_likelihood_t(x, df)
 }
 \arguments{
 \item{df}{}
 }
+\value{
+the log-likelihood of a sample x under the t densities
+}
 \description{
 log_likelihood_t
+calculate the log-likelihood of a sample x under the t densities
 }

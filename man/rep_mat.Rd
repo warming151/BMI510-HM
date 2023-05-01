@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{rep_mat}
 \alias{rep_mat}
-\title{rep_mat}
+\title{rep_mat
+make the original matrix become a matrix created by replicating the rows (or columns) M (N) times}
 \usage{
 rep_mat(x, M = 1, N = 1)
 }
 \arguments{
 \item{M, N}{}
 }
+\value{
+a matrix created by replicating the rows (or columns) M (N) times
+}
 \description{
 rep_mat
+make the original matrix become a matrix created by replicating the rows (or columns) M (N) times
 }

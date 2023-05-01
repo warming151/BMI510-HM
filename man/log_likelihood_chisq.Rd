@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{log_likelihood_chisq}
 \alias{log_likelihood_chisq}
-\title{log_likelihood_chisq}
+\title{log_likelihood_chisq
+calculate the log-likelihood of a sample x under the chi-squared}
 \usage{
 log_likelihood_chisq(x, df)
 }
 \arguments{
 \item{df}{}
 }
+\value{
+the log-likelihood of a sample x under the chi-squared
+}
 \description{
 log_likelihood_chisq
+calculate the log-likelihood of a sample x under the chi-squared
 }

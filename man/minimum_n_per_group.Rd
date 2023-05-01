@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{minimum_n_per_group}
 \alias{minimum_n_per_group}
-\title{minimum_n_per_group}
+\title{minimum_n_per_group
+calculate the minimum n per group needed for a two-sample t-test}
 \usage{
 minimum_n_per_group(d, power = 0.8)
 }
 \arguments{
 \item{power}{}
 }
+\value{
+the minimum n per group needed for a two-sample t-test
+}
 \description{
 minimum_n_per_group
+calculate the minimum n per group needed for a two-sample t-test
 }

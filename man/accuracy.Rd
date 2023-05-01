@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{accuracy}
 \alias{accuracy}
-\title{accuracy}
+\title{accuracy
+Calculate accuracy based on comparing predicted and training labels}
 \usage{
 accuracy(pred, truth)
 }
 \arguments{
 \item{truth}{}
 }
+\value{
+accuracy
+}
 \description{
 accuracy
+Calculate accuracy based on comparing predicted and training labels
 }

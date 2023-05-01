@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{recall}
 \alias{recall}
-\title{recall}
+\title{recall
+Calculate recall based on comparing predicted and training labels}
 \usage{
 recall(pred, truth)
 }
 \arguments{
 \item{truth}{}
 }
+\value{
+recall
+}
 \description{
 recall
+Calculate recall based on comparing predicted and training labels
 }

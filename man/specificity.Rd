@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{specificity}
 \alias{specificity}
-\title{specificity}
+\title{specificity
+Calculate specificity based on comparing predicted and training labels}
 \usage{
 specificity(pred, truth)
 }
 \arguments{
 \item{truth}{}
 }
+\value{
+specificity
+}
 \description{
 specificity
+Calculate specificity based on comparing predicted and training labels
 }

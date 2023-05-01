@@ -2,10 +2,15 @@
 % Please edit documentation in R/BMI510.R
 \name{classes}
 \alias{classes}
-\title{classes}
+\title{classes
+tell people the class of each variable in the vector}
 \usage{
 classes(x)
 }
+\value{
+a character vector containing the classes of each variable in a tibble x
+}
 \description{
 classes
+tell people the class of each variable in the vector
 }

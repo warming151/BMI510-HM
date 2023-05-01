@@ -1,11 +1,11 @@
 
 # bmi510.R
 #' rando
-#'
+#' tests whether x is an atomic vector or dataframe-like object
 #' @param x
 #' @param n, replace
 #'
-#' @return
+#' @return n samples or n rows
 #' @export
 #'
 #' @examples
@@ -19,11 +19,11 @@ rando = function(x, n=1, replace=T){
 
 
 #' is_min
-#'
+#' where x equals its maximum value
 #' @param x
 #' @param na.rm
 #'
-#' @return
+#' @return a logical with TRUE
 #' @export
 #'
 #' @examples
@@ -36,11 +36,11 @@ is_min = function(x, na.rm = T) {
 }
 
 #' is_max
-#'
+#' where x equals its maximum value
 #' @param x
 #' @param na.rm
 #'
-#' @return
+#' @return a logical with TRUE
 #' @export
 #'
 #' @examples
@@ -54,11 +54,11 @@ is_max = function(x, na.rm = T) {
 }
 
 #' rep_mat
-#'
+#' make the original matrix become a matrix created by replicating the rows (or columns) M (N) times
 #' @param x
 #' @param M,N
 #'
-#' @return
+#' @return a matrix created by replicating the rows (or columns) M (N) times
 #' @export
 #'
 #' @examples
@@ -81,11 +81,11 @@ rep_mat = function(x, M=1, N=1){
 
 
 #' classes
-#'
+#' tell people the class of each variable in the vector
 #' @param x
 #' @param
 #'
-#' @return
+#' @return a character vector containing the classes of each variable in a tibble x
 #' @export
 #'
 #' @examples
@@ -98,11 +98,11 @@ classes = function(x) {
 }
 
 #' df_scale
-#'
+#' scale the tibble x
 #' @param x
 #' @param center,scale
 #'
-#' @return
+#' @return a tibble x in which the numeric variables have been scaled with scale
 #' @export
 #'
 #' @examples
@@ -118,11 +118,11 @@ df_scale = function(x, center = T, scale = T) {
 
 
 #' log_likelihood_norm
-#'
+#' calculate the log-likelihood of a sample x under the normal distribution
 #' @param x
 #' @param mean,sd
 #'
-#' @return
+#' @return the log-likelihood of a sample x under the normal distribution
 #' @export
 #'
 #' @examples
@@ -132,11 +132,11 @@ log_likelihood_norm = function(x, mean, sd) {
 }
 
 #' log_likelihood_unif
-#'
+#' calculate the log-likelihood of a sample x under the uniform distribution
 #' @param x
 #' @param min,max
 #'
-#' @return
+#' @return the log-likelihood of a sample x under the uniform distribution
 #' @export
 #'
 #' @examples
@@ -146,11 +146,11 @@ log_likelihood_unif = function(x, min, max) {
 }
 
 #' log_likelihood_chisq
-#'
+#' calculate the log-likelihood of a sample x under the chi-squared
 #' @param x
 #' @param df
 #'
-#' @return
+#' @return the log-likelihood of a sample x under the chi-squared
 #' @export
 #'
 #' @examples
@@ -160,11 +160,11 @@ log_likelihood_chisq = function(x, df) {
 }
 
 #' log_likelihood_f
-#'
+#' calculate the log-likelihood of a sample x under the f
 #' @param x
 #' @param df1,df2
 #'
-#' @return
+#' @return the log-likelihood of a sample x under the f
 #' @export
 #'
 #' @examples
@@ -174,11 +174,11 @@ log_likelihood_f = function(x, df1, df2) {
 }
 
 #' log_likelihood_t
-#'
+#' calculate the log-likelihood of a sample x under the t densities
 #' @param x
 #' @param df
 #'
-#' @return
+#' @return the log-likelihood of a sample x under the t densities
 #' @export
 #'
 #' @examples
@@ -188,11 +188,11 @@ log_likelihood_t = function(x, df) {
 }
 
 #' sensitivity
-#'
+#' Calculate sensitivity based on comparing predicted and training labels
 #' @param pred
 #' @param truth
 #'
-#' @return
+#' @return sensitivity
 #' @export
 #'
 #' @examples
@@ -202,11 +202,11 @@ sensitivity = function(pred, truth) {
 }
 
 #' specificity
-#'
+#' Calculate specificity based on comparing predicted and training labels
 #' @param pred
 #' @param truth
 #'
-#' @return
+#' @return specificity
 #' @export
 #'
 #' @examples
@@ -216,11 +216,11 @@ specificity = function(pred, truth) {
 }
 
 #' precision
-#'
+#' Calculate precision based on comparing predicted and training labels
 #' @param pred
 #' @param truth
 #'
-#' @return
+#' @return precision
 #' @export
 #'
 #' @examples
@@ -230,11 +230,11 @@ precision = function(pred, truth) {
 }
 
 #' recall
-#'
+#' Calculate recall based on comparing predicted and training labels
 #' @param pred
 #' @param truth
 #'
-#' @return
+#' @return recall
 #' @export
 #'
 #' @examples
@@ -244,11 +244,11 @@ recall = function(pred, truth) {
 }
 
 #' accuracy
-#'
+#' Calculate accuracy based on comparing predicted and training labels
 #' @param pred
 #' @param truth
 #'
-#' @return
+#' @return accuracy
 #' @export
 #'
 #' @examples
@@ -258,11 +258,11 @@ accuracy = function(pred, truth) {
 }
 
 #' f1
-#'
+#' Calculate f1 based on comparing predicted and training labels
 #' @param pred
 #' @param truth
 #'
-#' @return
+#' @return f1
 #' @export
 #'
 #' @examples
@@ -274,11 +274,11 @@ f1 = function(pred, truth) {
 }
 
 #' minimum_n_per_group
-#'
+#' calculate the minimum n per group needed for a two-sample t-test
 #' @param d
 #' @param power
 #'
-#' @return
+#' @return the minimum n per group needed for a two-sample t-test
 #' @export
 #'
 #' @examples
@@ -292,11 +292,11 @@ minimum_n_per_group = function(d, power = 0.8) {
 
 
 #' r2
-#'
+#' Calculate the r-squared statistic between predicted and ground truth continuous variables
 #' @param pred
 #' @param truth
 #'
-#' @return
+#' @return r-squared statistic between predicted and ground truth continuous variables
 #' @export
 #'
 #' @examples
@@ -308,12 +308,12 @@ r2 = function(pred, truth) {
 }
 
 
-#' is_max
+#' adj_R2
+#' Calculate the adjusted r-squared statistic between predicted and ground truth continuous variables
+#' @param pred
+#' @param truth, n_p
 #'
-#' @param x
-#' @param na.rm
-#'
-#' @return
+#' @return the adjusted r-squared statistic between predicted and ground truth continuous variables
 #' @export
 #'
 #' @examples

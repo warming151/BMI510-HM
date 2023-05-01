@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{precision}
 \alias{precision}
-\title{precision}
+\title{precision
+Calculate precision based on comparing predicted and training labels}
 \usage{
 precision(pred, truth)
 }
 \arguments{
 \item{truth}{}
 }
+\value{
+precision
+}
 \description{
 precision
+Calculate precision based on comparing predicted and training labels
 }

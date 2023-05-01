@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{is_min}
 \alias{is_min}
-\title{is_min}
+\title{is_min
+where x equals its maximum value}
 \usage{
 is_min(x, na.rm = T)
 }
 \arguments{
 \item{na.rm}{}
 }
+\value{
+a logical with TRUE
+}
 \description{
 is_min
+where x equals its maximum value
 }

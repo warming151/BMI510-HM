@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{df_scale}
 \alias{df_scale}
-\title{df_scale}
+\title{df_scale
+scale the tibble x}
 \usage{
 df_scale(x, center = T, scale = T)
 }
 \arguments{
 \item{center, scale}{}
 }
+\value{
+a tibble x in which the numeric variables have been scaled with scale
+}
 \description{
 df_scale
+scale the tibble x
 }

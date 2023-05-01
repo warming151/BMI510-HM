@@ -2,13 +2,18 @@
 % Please edit documentation in R/BMI510.R
 \name{log_likelihood_f}
 \alias{log_likelihood_f}
-\title{log_likelihood_f}
+\title{log_likelihood_f
+calculate the log-likelihood of a sample x under the f}
 \usage{
 log_likelihood_f(x, df1, df2)
 }
 \arguments{
 \item{df1, df2}{}
 }
+\value{
+the log-likelihood of a sample x under the f
+}
 \description{
 log_likelihood_f
+calculate the log-likelihood of a sample x under the f
 }
